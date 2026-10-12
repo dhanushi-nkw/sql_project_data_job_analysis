@@ -42,8 +42,6 @@ FROM
 INNER JOIN average_salary ON average_salary.skill_id = demanded_skills.skill_id
 WHERE
     demand_count>10
---HAVING 
-  --  COUNT(skills_job_dim.skill_id) > 10
 ORDER BY
     salary_avg DESC
     demand_count DESC
